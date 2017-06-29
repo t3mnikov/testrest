@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TEST REST</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!--body-->
+<h1 class="text-center">TEST REST</h1>
+
+<div class="container">
+    <div class="row">
+        <form id="ajax-form">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="url">URL запрос</label>
+                    <input id="url" type="text" class="form-control" placeholder="">
+                </div>
+
+                <div class="form-group">
+                    <label for="method">Метод</label>
+                    <select id="method" class="form-control">
+                        <option value="GET">GET</option>
+                        <option value="POST">POST</option>
+                        <option value="PUT">PUT</option>
+                        <option value="DELETE">DELETE</option>
+                        <option value="HEAD">HEAD</option>
+                        <option value="PATCH">PATCH</option>
+                        <option value="OPTIONS">OPTIONS</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="data">Данные</label>
+                    <textarea id="data" name="data" cols="30" rows="6" class="form-control"></textarea>
+                </div>
+
+                <button id="go" type="button" class="btn btn-success">Оправить</button>
+
+                <br><br>
+                <p>https://pet-doctor.dev/api/v1/</p>
+                <p>key:    560b99ce90afcefb0e9a4c4c4c90eaf8</p>
+
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="field-json">Ответ JSON</label>
+                    <textarea id="field-json" name="field-json" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+                <br>
+
+                <div class="form-group">
+                    <label for="field-php">Ответ PHP</label>
+                    <textarea id="field-php" name="field-php" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!--js-->
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/sisyphus.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
